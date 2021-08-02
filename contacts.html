@@ -10,62 +10,89 @@
 </head>
 
 <body>
-    <a href="index.html">Главная</a>
-    <a href="#">Контакты</a>
-
-    <h2 class="contacts_h2_like">Contact&nbsp;us</h2>
-    <p class="text">Свяжитесь с&nbsp;нами</p>
-    <!-- Использовал встроенное CSS правило -->
-    <img src="img/contact_us.jpg" style="width: 250px;" alt="Свяжитесь с нами">
-
-    <h4 class="h4_like">Adress</h4>
-    <p class="text">г. Москва, ул. Московская&nbsp;1, офис&nbsp;1</p>
-
-    <h4 class="h4_like">Phone</h4>
-    <ul>
-        <li>Номер менеджера: +79991234567</li>
-        <li>Бесплатный номер: 88005553535</li>
-    </ul>
-
-    <h4 class="h4_like">Online service</h4>
-    <!-- Не совсем понял задание. Написано: "Список из 2х ссылок на сайт и почту", но позже упоминается уже номер телефона. Добавил и то и другое -->
-    <ul>
-        <li><a href="http://j91034ef.beget.tech/" target="_blanc">Наш первый проект</a></li>
-        <!-- Почта может не работать, если у вас не выбран почтовый сервис по умолчанию -->
-        <li><a href="mailto:example@mail.ru">Напишите нам</a></li>
-        <li><a href="tel:+78005553535">88005553535</a></li>
-    </ul>
-
-    <h4 class="h4_like">Send&nbsp;us message</h4>
-    <form action="#">
-        Full Name <input type="text" placeholder="Иван Иванов" class="unput_area"><br>
-        Email <input type="email" placeholder="examp@mail.ru" class="unput_area"><br>
-        Message<br>
-        <textarea cols="50" rows="8" class="unput_area"></textarea><br>
-        <button type="submit" class="button">Отправить</button><br>
-    </form>
-
-    <!-- Интерактивная карта от Yandex -->
-    <div style="position:relative;overflow:hidden;">
-        <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a>
-        <a href="https://yandex.ru/maps/213/moscow/house/moskovskaya_ulitsa_1/Z04YcgdpT0AAQFtvfXp3eHxjYg==/?ll=37.394859%2C55.715345&utm_medium=mapframe&utm_source=maps&z=9.56"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;">Московская улица, 1 — Яндекс.Карты</a>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCUe7PbDkC" width="560" height="400" frameborder="1"
-            allowfullscreen="true" style="position:relative;"></iframe>
+    <div class="main__screen">
+        <div class="content__area">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="appeal__to__contact">
+                <h2 class="contacts_h2_like">Contact&nbsp;us</h2>
+                <p class="text">Свяжитесь с&nbsp;нами</p>
+            </div>
+        </div>
     </div>
 
-    <h3 class="h3_like">Подвал</h3>
-    <p class="text">Ut&nbsp;sequi ex&nbsp;inventore eveniet dicta mollitia.</p>
-    <hr>
-    <p class="text">Контакты для связи</p>
-    <ul>
-        <li>Телефон: +79991234567</li>
-        <li>email: example@mail.ru</li>
-    </ul>
+    <div class="content__area">
+        <div class="picture">
+            <img src="img/contact_us.jpg" style="width: 250px;" alt="Свяжитесь с нами">
+        </div>
+        <div class="contact__data">
+            <div class="adress">
+                <h4 class="h4_like">Adress</h4>
+                <p class="text">г. Москва, ул. Московская&nbsp;1, офис&nbsp;1</p>
+            </div>
+            <div class="phone">
+                <h4 class="h4_like">Phone</h4>
+                <ul>
+                    <li>Номер менеджера: +79991234567</li>
+                    <li>Бесплатный номер: 88005553535</li>
+                </ul>
+            </div>
+            <div class="online__service">
+                <h4 class="h4_like">Online service</h4>
+                <ul>
+                    <li><a href="http://j91034ef.beget.tech/" target="_blanc">Наш первый проект</a></li>
+                    <!-- Почта может не работать, если у вас не выбран почтовый сервис по умолчанию -->
+                    <li><a href="mailto:example@mail.ru">Напишите нам</a></li>
+                    <li><a href="tel:+78005553535">88005553535</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="feedback__form">
+            <h4 class="h4_like">Send&nbsp;us message</h4>
+            <form action="#">
+                Full Name <input type="text" placeholder="Иван Иванов" class="unput_area"><br>
+                Email <input type="email" placeholder="examp@mail.ru" class="unput_area"><br>
+                Message<br>
+                <textarea cols="50" rows="8" class="unput_area"></textarea><br>
+                <button type="submit" class="button">Отправить</button><br>
+            </form>
+        </div>
+        <div class="map">
+            <!-- Интерактивная карта от Yandex -->
+            <div style="position:relative;overflow:hidden;">
+                <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a>
+                <a href="https://yandex.ru/maps/213/moscow/house/moskovskaya_ulitsa_1/Z04YcgdpT0AAQFtvfXp3eHxjYg==/?ll=37.394859%2C55.715345&utm_medium=mapframe&utm_source=maps&z=9.56"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Московская улица, 1 — Яндекс.Карты</a>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUe7PbDkC" width="560" height="400" frameborder="1"
+                    allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+        </div>
+    </div>
 
-    <p class="text">Все права защищены</p>
-
+    <div class="footer">
+        <div class="footer__top__part">
+            <div class="top__part__text">
+                <h3 class="h3_like">Подвал</h3>
+                <p class="text">Ut&nbsp;sequi ex&nbsp;inventore eveniet dicta mollitia.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="contact__information">
+            <p class="text">Контакты для связи</p>
+            <ul>
+                <li>Телефон: +79991234567</li>
+                <li>email: example@mail.ru</li>
+            </ul>
+            <div class="rights__reserved">
+                <p class="text">Все права защищены</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
