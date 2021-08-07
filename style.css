@@ -99,7 +99,7 @@ button {
     text-align: center;
 }
 
-.content__area {
+.content__area__contacts {
     display: flex;
     justify-content: space-between;
 }
