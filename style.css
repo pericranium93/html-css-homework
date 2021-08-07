@@ -1,5 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
 body {
     font-family: sans-serif;
+}
+
+.menu,
+.contacts{
+    list-style-type: none;
+    display: flex;
 }
 
 .contacts_h2_like,
@@ -17,6 +33,11 @@ button {
 .h1_like {
     font-size: 64px;
     color: #1F3F68;
+    width: 510px;
+}
+
+.h1_text {
+    width: 425px;
 }
 
 .contacts_h2_like {
@@ -34,7 +55,7 @@ button {
     color: #1F3F68;
 }
 
-.unput_area {
+.input_area {
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
@@ -50,6 +71,37 @@ button {
     line-height: 26px;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+.block {
+    width: 359px;
+}
+
+.information__on__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interest__to__work,
+.p__top__footer {
+    width: 495px;
+}
+
+.contacts {
+    justify-content: space-between;
+}
+
+.appeal__to__contact {
+    align-self: center;
+}
+
+.contacts__top__text {
+    text-align: center;
+}
+
+.content__area {
+    display: flex;
+    justify-content: space-between;
 }
 
 
